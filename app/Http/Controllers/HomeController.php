@@ -4,7 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests;
 use Illuminate\Http\Request;
-
+use App\Post;
+use App\User;
 class HomeController extends Controller
 {
     /**
@@ -24,6 +25,10 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $posts = Post::orderBy('id','DESC')->paginate(5);
+        $posts->each(function($posts){
+            $posts->user;
+        });
+        return view('welcome')->with('posts',$posts);
     }
 }
