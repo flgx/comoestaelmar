@@ -18,6 +18,7 @@ class CreateUsersTable extends Migration
             $table->string('apellido');
             $table->text('telefono');
             $table->text('propuesta');
+            $table->integer('online');
             $table->string('email')->unique();
             $table->enum('type',['member','admin'])->default('member');
             $table->string('password');

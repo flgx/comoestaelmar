@@ -6,7 +6,7 @@
     word-break:break-all;
 }
 .panel-body p  {
-    margin-left:10px;
+    font-size: 18px;
 }
 .panel-body h4 {
     text-decoration:underline;

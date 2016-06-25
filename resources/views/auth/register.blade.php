@@ -67,7 +67,7 @@
                         </div>
 
                         <div class="form-group{{ $errors->has('propuesta') ? ' has-error' : '' }}">
-                            <label for="email" class="col-md-4 control-label">Que tenes para aportar?</label>
+                            <label for="email" class="col-md-4 control-label">En que podes ayudar ?</label>
 
                             <div class="col-md-6">
                             <textarea name="propuesta" class="form-control" id="propuesta" cols="30" rows="10"></textarea>

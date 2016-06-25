@@ -16,7 +16,7 @@
                     <h2>{{$post->titulo}}</h2>
                 </div>
                 <div class="panel-body">
-                    <h3>{{$post->contenido}}</h3>
+                    <p>{{$post->contenido}}</p>
                     <div class="info">
                         Propuesta enviada por {{$post->user->nombre}} {{$post->user->apellido}}  | {{$post->created_at}}.
                     </div>
